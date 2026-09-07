@@ -2,320 +2,294 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>アンポンリゾリューション | CREATE THE NEXT WORKSPACE</title>
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=956fee57-b62f-4bd3-9e61-32513b3664f6
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anpon Resolution | CREATE THE NEXT WORKSPACE</title>
   <meta name="robots" content="noindex">
-
-  <meta
-    name="description"
-    content="アンポンリゾリューションは、金物施工・オーダーメイド制作・札幌ドーム場面転換・鉄板整備・工具レンタル・レンタル作業場を通じて、つくる人を支える会社です。"
-  />
-
-  <!-- Google Fonts -->
+  <meta name="description" content="Anpon Resolutionは、金物施工・オーダーメイド制作・イベント設営・鉄板設備・工具レンタル・レンタル作業場を通じて、つくる人を支える会社です。" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/desktop.css" />
-  <link rel="stylesheet" href="css/mobile.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Noto+Sans+JP:wght@400;500;700;900&family=Barlow+Condensed:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
 
   <!-- HEADER -->
-<header class="site-header">
+  <header class="site-header" id="site-header">
     <a href="#" class="site-logo">
-        <img src="images/logo-header.png" alt="アンポンリゾリューション" class="site-logo__image">
-      </a>
-  
+      <img src="images/logo-header.png" alt="Anpon Resolution" class="logo-img">
+    </a>
     <nav class="site-nav">
       <a href="#service">事業内容</a>
-      <a href="#audience">対象別メニュー</a>
-      <a href="#about">私たちについて</a>
-      <a href="#recruit">採用情報</a>
-    </nav>
-  
-    <a href="#contact" class="header-contact">
-      お問い合わせ
-    </a>
-  
-    <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </header>
-  
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" aria-hidden="true">
-    <div class="mobile-menu__inner">
-      <a href="#service">事業内容</a>
-      <a href="#audience">対象別メニュー</a>
+      <a href="#works">実績紹介</a>
       <a href="#about">私たちについて</a>
       <a href="#recruit">採用情報</a>
       <a href="#contact">お問い合わせ</a>
+    </nav>
+    <a href="#contact" class="header-cta">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+      お問い合わせ
+    </a>
+    <button class="menu-toggle" aria-label="メニュー" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <a href="#service" class="mobile-link">事業内容</a>
+      <a href="#works" class="mobile-link">実績紹介</a>
+      <a href="#about" class="mobile-link">私たちについて</a>
+      <a href="#recruit" class="mobile-link">採用情報</a>
+      <a href="#contact" class="mobile-link mobile-link--cta">お問い合わせ</a>
     </div>
   </div>
 
-
-  <!-- HERO -->
   <main>
 
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero__inner">
-
-        <div class="hero__text">
-          <p class="hero__eyebrow">ANPON RESOLUTION / SAPPORO</p>
-
-          <h1 class="hero__title">
-            CREATE<br>
-            THE NEXT<br>
-            WORKSPACE.
-          </h1>
-
-          <div class="hero__line"></div>
-
-          <p class="hero__lead">
-            つくる人の想いを、カタチに。<br>
-            本物の技術で、未来をつくる。
-          </p>
-
-          <p class="hero__description">
-            金属のプロフェッショナルとして、製作・施工・整備から工具のレンタルやWorkspaceの提供まで。<br>
-            誰もが「つくる」を楽しめる世界を、アンポンリゾリューションはつくり続けます。
-          </p>
-        </div>
-
-        <div class="hero__scroll">
-          <span>SCROLL</span>
-          <span class="hero__scroll-line"></span>
-        </div>
-
+      <div class="hero__bg">
+        <img src="images/hero-bg.png" alt="" class="hero__bg-img" fetchpriority="high">
+        <div class="hero__bg-overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">ANPON RESOLUTION / SAPPORO</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line">CREATE</span>
+          <span class="hero__title-line">THE NEXT</span>
+          <span class="hero__title-line">WORKSPACE.</span>
+        </h1>
+        <div class="hero__accent-line"></div>
+        <p class="hero__lead">つくる人の想いを、カタチに。<br>本物の技術で、未来をつくる。</p>
+        <p class="hero__body">金属加工のプロフェッショナルとして、<br>建築・製作・整備からDIYまで。<br>誰もが「つくる」を楽しめる世界を、<br>Anpon Resolutionはつくり続けます。</p>
+      </div>
+      <div class="hero__scroll">
+        <span>SCROLL</span>
+        <span class="hero__scroll-line"></span>
       </div>
     </section>
-
 
     <!-- SERVICE -->
     <section id="service" class="section service-section">
-      <div class="section-heading">
-        <p class="section-label">SERVICE</p>
-        <h2>事業内容</h2>
-        <p>
-          プロの現場から、つくる楽しさまで。<br>
-          アンポンリゾリューションの技術と場所を、それぞれの目的に合わせて届けます。
-        </p>
-      </div>
-
-      <div class="service-grid">
-
-        <a href="#" class="service-card">
-          <div class="service-card__number">01</div>
-          <div class="service-card__visual service-card__visual--construction"></div>
-          <div class="service-card__body">
-            <p class="service-card__en">CONSTRUCTION</p>
-            <h3>金物施工事業</h3>
-            <p>
-              ゼネコン案件を中心に、建築金物の施工に対応します。
-            </p>
-            <span class="card-arrow">→</span>
-          </div>
-        </a>
-
-        <a href="#" class="service-card">
-          <div class="service-card__number">02</div>
-          <div class="service-card__visual service-card__visual--custom"></div>
-          <div class="service-card__body">
-            <p class="service-card__en">CUSTOM MADE</p>
-            <h3>オーダーメイド制作</h3>
-            <p>
-              製作金物・アイアン製品・特注金物など、一点物の製作にも対応します。
-            </p>
-            <span class="card-arrow">→</span>
-          </div>
-        </a>
-
-        <a href="#" class="service-card">
-          <div class="service-card__number">03</div>
-          <div class="service-card__visual service-card__visual--dome"></div>
-          <div class="service-card__body">
-            <p class="service-card__en">SPECIAL PROJECT</p>
-            <h3>札幌ドーム場面転換</h3>
-            <p>
-              特殊設備・大型現場で培った対応力を活かした施工領域です。
-            </p>
-            <span class="card-arrow">→</span>
-          </div>
-        </a>
-
-        <a href="#" class="service-card">
-          <div class="service-card__number">04</div>
-          <div class="service-card__visual service-card__visual--maintenance"></div>
-          <div class="service-card__body">
-            <p class="service-card__en">MAINTENANCE</p>
-            <h3>鉄板整備</h3>
-            <p>
-              敷鉄板の整備やプレスなど、現場の課題に対応します。
-            </p>
-            <span class="card-arrow">→</span>
-          </div>
-        </a>
-
-        <a href="#" class="service-card">
-          <div class="service-card__number">05</div>
-          <div class="service-card__visual service-card__visual--tools"></div>
-          <div class="service-card__body">
-            <p class="service-card__en">TOOL RENTAL</p>
-            <h3>工具レンタル</h3>
-            <p>
-              手工具、電動工具を、プロは勿論、一般の方にもレンタルしています。
-            </p>
-            <span class="card-arrow">→</span>
-          </div>
-        </a>
-
-        <a href="#" class="service-card">
-          <div class="service-card__number">06</div>
-          <div class="service-card__visual service-card__visual--workspace"></div>
-          <div class="service-card__body">
-            <p class="service-card__en">WORKSPACE</p>
-            <h3>レンタル作業場・ワークショップ</h3>
-            <p>
-              作業スペースの提供や、ものづくり体験の場を提供してます。
-            </p>
-            <span class="card-arrow">→</span>
-          </div>
-        </a>
-
+      <div class="section__inner">
+        <div class="section-head">
+          <p class="section-label">SERVICE</p>
+          <h2 class="section-title">事業内容</h2>
+          <p class="section-desc">プロの技術から、つくる楽しさまで。<br>Anpon Resolutionの強みと技術を、それぞれの形にお届けします。</p>
+        </div>
+        <div class="service-grid">
+          <a href="#" class="service-card">
+            <div class="service-card__visual service-card__visual--construction"></div>
+            <div class="service-card__body">
+              <span class="service-card__num">01</span>
+              <p class="service-card__en">CONSTRUCTION</p>
+              <h3>金物施工事業</h3>
+              <p>ゼネコンや建設業者を中心に、建築物の金物施工・取付・制作まで一貫して対応します。</p>
+              <span class="card-arrow">→</span>
+            </div>
+          </a>
+          <a href="#" class="service-card">
+            <div class="service-card__visual service-card__visual--custom"></div>
+            <div class="service-card__body">
+              <span class="service-card__num">02</span>
+              <p class="service-card__en">CUSTOM MADE</p>
+              <h3>オーダーメイド制作</h3>
+              <p>金属加工アイデアから特注金物やアイアン製品など、一点物の制作にも柔軟に対応します。</p>
+              <span class="card-arrow">→</span>
+            </div>
+          </a>
+          <a href="#" class="service-card">
+            <div class="service-card__visual service-card__visual--dome"></div>
+            <div class="service-card__body">
+              <span class="service-card__num">03</span>
+              <p class="service-card__en">SPECIAL PROJECT</p>
+              <h3>イベント設営・<br>舞台施工</h3>
+              <p>展示会・コンサート等の大規模舞台や特殊設備の設営・撤去を、実績ある施工管理で支えます。</p>
+              <span class="card-arrow">→</span>
+            </div>
+          </a>
+          <a href="#" class="service-card">
+            <div class="service-card__visual service-card__visual--maintenance"></div>
+            <div class="service-card__body">
+              <span class="service-card__num">04</span>
+              <p class="service-card__en">MAINTENANCE</p>
+              <h3>鉄板整備</h3>
+              <p>設備の整備・修理・切断・曲げなど、現場の課題に対応します。</p>
+              <span class="card-arrow">→</span>
+            </div>
+          </a>
+          <a href="#" class="service-card">
+            <div class="service-card__visual service-card__visual--tools"></div>
+            <div class="service-card__body">
+              <span class="service-card__num">05</span>
+              <p class="service-card__en">TOOL RENTAL</p>
+              <h3>工具レンタル</h3>
+              <p>プロ用工具を、必要なときに手軽にレンタル。プロは当然、一般の方にも貸し出します。</p>
+              <span class="card-arrow">→</span>
+            </div>
+          </a>
+          <a href="#" class="service-card">
+            <div class="service-card__visual service-card__visual--workspace"></div>
+            <div class="service-card__body">
+              <span class="service-card__num">06</span>
+              <p class="service-card__en">WORKSPACE</p>
+              <h3>レンタル作業場・<br>ワークショップ</h3>
+              <p>作業スペースの貸出やワークショップを随時開催。ものづくりの場を提供します。</p>
+              <span class="card-arrow">→</span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
-
 
     <!-- AUDIENCE -->
-    <section id="audience" class="section audience-section">
-      <div class="audience-grid">
-
-        <a href="#" class="audience-card audience-card--business">
-            <p class="section-label">FOR BUSINESS</p>
-            <h3>法人・元請け<br>企業の方へ</h3>
-            <p>
-              確かな技術と現場対応力で、<br>
-              プロジェクトを支えます。
-            </p>
-            <span>詳しく見る →</span>
+    <section id="audience" class="audience-section">
+      <div class="section__inner">
+        <div class="audience-grid">
+          <a href="#" class="audience-card audience-card--business">
+            <div class="audience-card__bg"></div>
+            <div class="audience-card__content">
+              <p class="section-label">FOR BUSINESS</p>
+              <h3>法人・元請け<br>企業の方へ</h3>
+              <p>確かな技術と実績で、プロジェクトを支えます。</p>
+              <span class="audience-arrow">詳しく見る →</span>
+            </div>
           </a>
-
-        <a href="#" class="audience-card audience-card--creator">
-          <p class="section-label">FOR CREATOR / DIY</p>
-          <h3>クリエイター・DIYの方へ</h3>
-          <p>
-            アイデアを形にするための工具・場所・技術を提供します。
-          </p>
-          <span>詳しく見る →</span>
-        </a>
-
-        <a href="#" class="audience-card audience-card--family">
-          <p class="section-label">FOR FAMILY / COMMUNITY</p>
-          <h3>親子・地域向けワークショップ</h3>
-          <p>
-            子どもから大人まで、本物のものづくりを体験できる場を目指します。
-          </p>
-          <span>詳しく見る →</span>
-        </a>
-
+          <a href="#" class="audience-card audience-card--creator">
+            <div class="audience-card__bg"></div>
+            <div class="audience-card__content">
+              <p class="section-label">FOR CREATOR / DIY</p>
+              <h3>クリエイター・<br>DIYの方へ</h3>
+              <p>アイデアをカタチにするパートナーとして伴走します。</p>
+              <span class="audience-arrow">詳しく見る →</span>
+            </div>
+          </a>
+          <a href="#" class="audience-card audience-card--family">
+            <div class="audience-card__bg"></div>
+            <div class="audience-card__content">
+              <p class="section-label">FOR FAMILY / COMMUNITY</p>
+              <h3>親子・地域向け<br>ワークショップ</h3>
+              <p>ものづくりの楽しさを体験できる場をご用意しています。</p>
+              <span class="audience-arrow">詳しく見る →</span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
-
 
     <!-- ABOUT -->
     <section id="about" class="section about-section">
-      <div class="about-text">
-        <p class="section-label">ABOUT ANPON</p>
-        <h2>
-          技術と創造で、<br>
-          未来の「つくる」を支える。
-        </h2>
-        <p>
-          アンポンリゾリューションは、金物施工を軸に、製作・整備・工具レンタル・ワークスペースの提供へと領域を広げる会社です。
-          職人の技術をもっと身近に、もっとかっこよく、もっと楽しく。
-          プロの現場と、これからつくる人たちをつなぐ存在を目指します。
-        </p>
-        <a href="#" class="button-outline">私たちについて</a>
-      </div>
-
-      <div class="about-visual">
-        <div class="about-visual__large"></div>
-        <div class="about-visual__small"></div>
+      <div class="section__inner about-inner">
+        <div class="about-text">
+          <p class="section-label">ABOUT ANPON RESOLUTION</p>
+          <h2>強みと技術で、<br>未来を創造する。<br>「つくる」を楽しむ。</h2>
+          <p>Anpon Resolutionは、金物施工を核に、鉄板整備・レンタル・工具レンタル・レンタル作業場・ワークショップの運営をとおして、つくる人を支える企業です。</p>
+          <p>創業の精神をもって誠実に、もっとかっこよく、もっといい仕事をしてほしいと願う未来の仲間を、Anpon Resolutionはつくり続けます。</p>
+          <a href="#" class="btn-outline">私たちについて</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-visual__large"></div>
+          <div class="about-visual__small"></div>
+        </div>
       </div>
     </section>
 
-
     <!-- RECRUIT -->
-    <section id="recruit" class="section recruit-section">
-      <div class="recruit-text">
-        <p class="section-label">RECRUIT</p>
-        <h2>つくる側に、回ろう。</h2>
-        <p>
-          職人、デザイナー、エンジニア、企画、広報。<br>
-          それぞれの個性が、未来のアンポンリゾリューションをつくる。
-        </p>
-        <a href="#" class="button-dark">採用情報を見る</a>
+    <section id="recruit" class="recruit-section">
+      <div class="recruit-inner">
+        <div class="recruit-text">
+          <p class="section-label">RECRUIT</p>
+          <h2>つくる側に、<br>回ろう。</h2>
+          <p>職人、デザイナー、エンジニア、企画、広報。<br>それぞれの個性が、未来のAnpon Resolutionをつくる。</p>
+          <a href="#" class="btn-dark">採用情報を見る →</a>
+        </div>
+        <div class="recruit-visual"></div>
       </div>
     </section>
 
   </main>
 
-
   <!-- FOOTER -->
   <footer id="contact" class="site-footer">
-    <div class="footer-brand">
-        <img src="images/logo-footer.png" alt="アンポンリゾリューション" class="footer-logo-image">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-footer.png" alt="Anpon Resolution" class="footer-logo">
+        <p class="footer-tagline">CREATE THE NEXT WORKSPACE</p>
       </div>
-
-    <div class="footer-info">
-      <p>アンポンリゾリューション</p>
-      <p>代表：あんぽん10</p>
-      <p>
-        〒000-0000<br>
-        北海道札幌市サンプル区見本町1-2-3<br>
-        デモビル101
-      </p>
-      <p>TEL : 000-0000-0000（デモ）</p>
+      <nav class="footer-nav">
+        <a href="#service">事業内容</a>
+        <a href="#works">実績紹介</a>
+        <a href="#about">私たちについて</a>
+        <a href="#recruit">採用情報</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <div class="footer-info">
+        <p>Anpon Resolution</p>
+        <p>代表：あんぽん10</p>
+        <p>〒000-0000<br>北海道札幌市サンプル区見本町1-2-3（デモ）</p>
+        <p>TEL : 000-0000-0000（デモ）</p>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="LINE" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.16 2 11.28c0 2.98 1.48 5.63 3.79 7.37L5 22l3.55-1.88c1.08.3 2.23.46 3.45.46 5.52 0 10-4.16 10-9.28C22 6.16 17.52 2 12 2z"/></svg>
+        </a>
+      </div>
     </div>
-
-    <div class="footer-links">
-      <a href="#service">事業内容</a>
-      <a href="#about">私たちについて</a>
-      <a href="#recruit">採用情報</a>
-      <a href="#contact">お問い合わせ</a>
+    <div class="footer-bottom">
+      <p>© Anpon Resolution (demo site)</p>
+      <div class="footer-legal">
+        <a href="#">プライバシーポリシー</a>
+        <span>|</span>
+        <a href="#">サイトマップ</a>
+      </div>
     </div>
   </footer>
 
   <script>
-    const menuButton = document.querySelector('.menu-button');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
-  
-    menuButton.addEventListener('click', () => {
-      const isOpen = menuButton.classList.toggle('is-open');
-  
-      mobileMenu.classList.toggle('is-open', isOpen);
-      menuButton.setAttribute('aria-expanded', isOpen);
-      mobileMenu.setAttribute('aria-hidden', !isOpen);
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
     });
-  
-    mobileMenuLinks.forEach((link) => {
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      mobileMenu.classList.toggle('is-open', isOpen);
+      mobileMenu.setAttribute('aria-hidden', !isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
-        menuButton.classList.remove('is-open');
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
         mobileMenu.classList.remove('is-open');
-        menuButton.setAttribute('aria-expanded', 'false');
         mobileMenu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
       });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.service-card, .audience-card, .about-text, .about-visual, .recruit-text, .recruit-visual').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
     });
   </script>
 
