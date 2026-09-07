@@ -1,0 +1,254 @@
+/* =========================
+   DESKTOP STYLE
+   PC・タブレット横幅用の調整
+========================= */
+
+
+/* =========================
+   1200px以上：PCワイド
+========================= */
+
+@media screen and (min-width: 1200px){
+
+    .site-header{
+      height:82px;
+      padding:0 4vw;
+    }
+  
+    .site-logo{
+      flex-shrink:0;
+    }
+  
+    .site-logo__main,
+    .site-logo__sub,
+    .site-nav a,
+    .header-contact{
+      white-space:nowrap;
+    }
+  
+    .site-nav{
+      flex:1;
+      justify-content:center;
+      gap:38px;
+    }
+  
+    .header-contact{
+      flex-shrink:0;
+    }
+  
+    .hero{
+      background-position:center right;
+    }
+  
+    .hero__text{
+      width:min(520px, 42vw);
+    }
+  }
+  
+  
+  /* =========================
+     1024px〜1199px：PC標準〜少し狭め
+  ========================= */
+  
+  @media screen and (min-width: 1024px) and (max-width: 1199px){
+  
+    .site-header{
+      height:76px;
+      padding:0 3vw;
+    }
+  
+    .site-logo{
+      flex-shrink:0;
+    }
+  
+    .site-logo__main{
+      font-size:24px;
+      white-space:nowrap;
+    }
+  
+    .site-logo__sub{
+      display:none;
+    }
+  
+    .site-nav{
+      flex:1;
+      justify-content:center;
+      gap:24px;
+      font-size:12px;
+      white-space:nowrap;
+    }
+  
+    .site-nav a{
+      white-space:nowrap;
+    }
+  
+    .header-contact{
+      flex-shrink:0;
+      padding:12px 20px;
+      font-size:12px;
+      white-space:nowrap;
+    }
+  
+    .hero{
+      background-position:center right;
+    }
+  
+    .hero__inner{
+      padding-left:4vw;
+      padding-right:4vw;
+    }
+  
+    .hero__text{
+      width:44vw;
+    }
+  
+    .hero__title{
+      font-size:clamp(54px, 5.8vw, 74px);
+    }
+  
+    .hero__lead{
+      font-size:19px;
+    }
+  
+    .hero__description{
+      font-size:13px;
+    }
+  
+    .service-grid{
+      grid-template-columns:repeat(3, 1fr);
+      gap:18px;
+    }
+  
+    .service-card{
+      grid-template-columns:1fr;
+    }
+  
+    .service-card__visual{
+      min-height:170px;
+    }
+  
+    .service-card__body{
+      padding:34px 24px 28px;
+    }
+  }
+  
+  
+  /* =========================
+     769px〜1023px：狭めPC・タブレット横
+  ========================= */
+  
+  @media screen and (min-width: 769px) and (max-width: 1023px){
+  
+    .site-header{
+      height:72px;
+      padding:0 28px;
+    }
+  
+    .site-logo{
+      flex-shrink:0;
+    }
+  
+    .site-logo__main{
+      font-size:22px;
+      white-space:nowrap;
+    }
+  
+    .site-logo__sub{
+      display:none;
+    }
+  
+    .site-nav{
+      flex:1;
+      justify-content:flex-end;
+      gap:18px;
+      font-size:11px;
+      white-space:nowrap;
+    }
+  
+    .site-nav a{
+      white-space:nowrap;
+    }
+  
+    .header-contact{
+      display:none;
+    }
+  
+    .hero{
+      background-position:center right;
+    }
+  
+    .hero__inner{
+      padding:7vh 32px 6vh;
+    }
+  
+    .hero__text{
+      width:48vw;
+      max-width:440px;
+    }
+  
+    .hero__eyebrow{
+      font-size:10px;
+      margin-bottom:20px;
+    }
+  
+    .hero__title{
+      font-size:clamp(46px, 6vw, 64px);
+    }
+  
+    .hero__line{
+      width:260px;
+      height:8px;
+      margin-bottom:28px;
+    }
+  
+    .hero__lead{
+      font-size:17px;
+    }
+  
+    .hero__description{
+      font-size:12px;
+      line-height:1.9;
+    }
+  
+    .section{
+      padding:82px 32px;
+    }
+  
+    .section-heading{
+      display:block;
+    }
+  
+    .section-heading h2{
+      margin:8px 0 14px;
+    }
+  
+    .service-grid{
+      grid-template-columns:repeat(2, 1fr);
+      gap:18px;
+    }
+  
+    .service-card{
+      grid-template-columns:1fr;
+    }
+  
+    .service-card__visual{
+      min-height:160px;
+    }
+  
+    .audience-grid{
+      grid-template-columns:1fr;
+    }
+  
+    .about-section{
+      grid-template-columns:1fr;
+      gap:42px;
+    }
+  
+    .recruit-section{
+      padding:58px 48px;
+    }
+  
+    .site-footer{
+      grid-template-columns:1fr 1fr;
+    }
+  }

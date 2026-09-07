@@ -1,0 +1,386 @@
+/* =========================
+   MOBILE STYLE
+   スマホ専用の調整
+========================= */
+
+@media screen and (max-width: 1100px){
+
+    :root{
+      --header-height:64px;
+    }
+  
+    body{
+      font-size:14px;
+      line-height:1.75;
+    }
+  
+  
+    /* =========================
+       HEADER
+    ========================= */
+  
+    .site-header{
+      height:var(--header-height);
+      padding:0 20px;
+      background:rgba(255,255,255,0.92);
+    }
+  
+    .site-logo{
+      gap:8px;
+    }
+  
+    .site-logo__main{
+      font-size:21px;
+      letter-spacing:0.08em;
+    }
+  
+    .site-logo__sub{
+      display:none;
+    }
+  
+    .site-nav{
+      display:none;
+    }
+  
+    .header-contact{
+      padding:10px 14px;
+      font-size:11px;
+    }
+  
+  
+    /* =========================
+       HERO
+    ========================= */
+  
+    .hero{
+      min-height:100svh;
+      padding-top:var(--header-height);
+  
+      background:
+        linear-gradient(
+          180deg,
+          rgba(247,245,239,0.96) 0%,
+          rgba(247,245,239,0.82) 35%,
+          rgba(247,245,239,0.28) 70%,
+          rgba(247,245,239,0.08) 100%
+        ),
+        url('../images/hero-bg.png') center right / cover no-repeat;
+    }
+  
+    .hero__inner{
+      min-height:calc(100svh - var(--header-height));
+      padding:54px 22px 46px;
+      align-items:flex-start;
+    }
+  
+    .hero__text{
+      width:100%;
+      max-width:360px;
+    }
+  
+    .hero__eyebrow{
+      font-size:10px;
+      margin-bottom:22px;
+    }
+  
+    .hero__title{
+      font-size:clamp(42px, 15vw, 62px);
+      line-height:0.95;
+      letter-spacing:-0.03em;
+    }
+  
+    .hero__line{
+      width:230px;
+      height:7px;
+      margin:12px 0 28px 6px;
+    }
+  
+    .hero__line::after{
+      width:70px;
+      right:-52px;
+    }
+  
+    .hero__lead{
+      font-size:18px;
+      line-height:1.75;
+      margin-bottom:22px;
+    }
+  
+    .hero__description{
+      font-size:12.5px;
+      line-height:1.9;
+      max-width:330px;
+    }
+  
+    .hero__scroll{
+      display:none;
+    }
+  
+  
+    /* =========================
+       COMMON SECTION
+    ========================= */
+  
+    .section{
+      padding:68px 20px;
+    }
+  
+    .section-heading{
+      display:block;
+      margin-bottom:32px;
+    }
+  
+    .section-label{
+      font-size:11px;
+      margin-bottom:8px;
+    }
+  
+    .section-heading h2{
+      font-size:28px;
+      margin-bottom:14px;
+    }
+  
+    .section-heading > p:last-child{
+      font-size:13px;
+      line-height:1.9;
+    }
+  
+    .section-heading br{
+      display:none;
+    }
+  
+  
+    /* =========================
+       SERVICE
+    ========================= */
+  
+    .service-grid{
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+  
+    .service-card{
+      min-height:190px;
+      grid-template-columns:38% 62%;
+    }
+  
+    .service-card__number{
+      top:14px;
+      left:14px;
+      font-size:12px;
+    }
+  
+    .service-card__body{
+      padding:34px 20px 24px;
+    }
+  
+    .service-card__en{
+      font-size:9px;
+    }
+  
+    .service-card h3{
+      font-size:17px;
+      margin-bottom:10px;
+    }
+  
+    .service-card__body p:not(.service-card__en){
+      font-size:12px;
+      line-height:1.75;
+    }
+  
+    .card-arrow{
+      margin-top:16px;
+      font-size:22px;
+    }
+  
+  
+    /* =========================
+       AUDIENCE
+    ========================= */
+  
+    .audience-section{
+      padding-top:20px;
+    }
+  
+    .audience-grid{
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+  
+    .audience-card{
+      min-height:auto;
+      padding:28px 24px;
+    }
+  
+    .audience-card h3{
+      font-size:21px;
+    }
+  
+    .audience-card p:not(.section-label){
+      font-size:13px;
+    }
+  
+  
+    /* =========================
+       ABOUT
+    ========================= */
+  
+    .about-section{
+      display:block;
+      padding:68px 20px;
+    }
+  
+    .about-text h2{
+      font-size:30px;
+      line-height:1.45;
+    }
+  
+    .about-text > p:not(.section-label){
+      font-size:13.5px;
+    }
+  
+    .about-visual{
+      margin-top:34px;
+      min-height:300px;
+      grid-template-columns:1fr 0.7fr;
+    }
+  
+  
+    /* =========================
+       RECRUIT
+    ========================= */
+  
+    .recruit-section{
+      margin:0 20px 68px;
+      padding:42px 24px;
+    }
+  
+    .recruit-text h2{
+      font-size:30px;
+    }
+  
+    .recruit-text p:not(.section-label){
+      font-size:13.5px;
+    }
+  
+  
+    /* =========================
+       FOOTER
+    ========================= */
+  
+    .site-footer{
+      grid-template-columns:1fr;
+      padding:48px 22px;
+      gap:28px;
+    }
+  
+    .footer-logo{
+      font-size:26px;
+    }
+  }
+  
+  
+  /* かなり小さいスマホ用 */
+  @media screen and (max-width: 420px){
+  
+    .header-contact{
+      display:none;
+    }
+  
+    .hero__inner{
+      padding-top:44px;
+    }
+  
+    .hero__title{
+      font-size:42px;
+    }
+  
+    .hero__line{
+      width:200px;
+    }
+  
+    .hero__lead{
+      font-size:17px;
+    }
+  
+    .hero__description{
+      font-size:12px;
+    }
+  
+    .service-card{
+      grid-template-columns:1fr;
+    }
+  
+    .service-card__visual{
+      min-height:150px;
+    }
+  
+    .service-card__body{
+      padding:24px 20px 26px;
+    }
+  }
+
+  /* =========================
+   MOBILE DRAWER MENU
+========================= */
+
+@media screen and (max-width:1100px){
+
+    site-nav,
+    .header-contact{
+      display:none;
+    }
+  
+    .menu-button{
+      display:flex;
+    }
+  
+    .mobile-menu{
+      display:block;
+      position:fixed;
+      top:var(--header-height);
+      left:0;
+      width:100%;
+      background:rgba(255,255,255,0.96);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(0,0,0,0.08);
+      z-index:999;
+      transform:translateY(-120%);
+      opacity:0;
+      pointer-events:none;
+      transition:0.35s ease;
+    }
+  
+    .mobile-menu.is-open{
+      transform:translateY(0);
+      opacity:1;
+      pointer-events:auto;
+    }
+  
+    .mobile-menu__inner{
+      padding:28px 22px 34px;
+      display:grid;
+      gap:18px;
+    }
+  
+    .mobile-menu a{
+      font-size:15px;
+      font-weight:900;
+      letter-spacing:0.08em;
+      padding-bottom:14px;
+      border-bottom:1px solid rgba(0,0,0,0.08);
+    }
+  
+    .mobile-menu a:last-child{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:180px;
+      height:46px;
+      margin-top:8px;
+      background:var(--color-black);
+      color:var(--color-white);
+      border-bottom:none;
+      font-size:13px;
+    }
+  }
