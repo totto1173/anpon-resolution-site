@@ -230,3 +230,6 @@ main { overflow: hidden; }
   .audience-card h3 { font-size: 28px; }
   .recruit-inner { min-height: 560px; }
 }
+
+/* hero-mobile-fix: portrait image for phones */
+@media screen and (max-width: 768px) { .hero__bg-img { object-position: center bottom; } .hero__bg-overlay { background: linear-gradient(180deg, rgba(247,245,239,0.55) 0%, rgba(247,245,239,0.25) 45%, rgba(247,245,239,0.00) 70%); } }
